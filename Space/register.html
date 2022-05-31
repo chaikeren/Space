@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/media.css">
+    <title>Register</title>
+</head>
+<body class="register">
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery1.html">Gallery</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <form method="get" action="thanks.html" class="reg-form">
+        <div id="rect">
+            <img src="photoes/Ricks_ship.PNG-removebg-preview.png" alt="">
+        </div>
+        <h2 class="h2-reg">Register</h2>
+        <fieldset>
+            <ul>
+            <li><input type="text" name="f-name" placeholder="First Name" required></li>
+            <li><input type="text" name="l-name" placeholder="Last name" required></li>
+            <li><input type="password" name="pass" placeholder="Password" required></li>
+            <li><input type="email" name="email" placeholder="Email" required></li>
+            <li><input type="date" name="birth-day" placeholder="Date of Birth" required></li>
+            <li class="reg-btn"><input type="submit" placeholder="submit" id="btn-inp"></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

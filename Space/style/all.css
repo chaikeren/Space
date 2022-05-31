@@ -1,0 +1,914 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* //Gallery bacrounds
+//none mobile///// */
+.home
+{
+    background: rgb(87, 109, 209);
+}
+.gallery2
+{
+    background: rgb(121, 121, 121);
+}
+.gallery3
+{
+    background: rgb(175, 173, 138);
+}
+.gallery4
+{
+    background: rgb(175, 173, 138);
+}
+.gallery5
+{
+    background: rgb(202, 158, 91);
+}
+/* //////////////
+// all the spin 
+//planets and 
+/// text///// */
+.wrapper2
+{
+    width: 100%;
+}
+.info
+{
+    width: 100%;
+}
+.info h2
+{
+    margin-left: 70px;
+    padding: 25px 55px 20px;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    color: #fff;
+}
+.big h2
+{
+    position: fixed;
+    left: 1200px;
+
+    padding: 25px 55px 20px;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    color: #fff;
+}
+.earth
+{
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-image: url(../photoes/earth2.jpeg);
+    border-radius: 50%;
+    margin: 60px;
+    margin-left: 65px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 15px #1ba0a0,
+                inset 0 -30px 30px rgba(0, 0, 0, 1),
+                inset 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: spin 70s linear infinite;
+}
+.earth::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 130px;
+    height: 410px;
+    margin-left: 100px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+.mercury
+{
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-image: url(../photoes/mercury4.jfif);
+    border-radius: 50%;
+    margin: 100px;
+    margin-left: 100px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 7px #a0a0a0,
+                inset 0 -10px 30px rgba(0, 0, 0, 1),
+                inset 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: spin 50s linear infinite;
+}
+.mercury::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 100px;
+    height: 410px;
+    margin-left: 50px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+.saturn
+{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-image: url(../photoes/saturnmap.jpg);
+    border-radius: 50%;
+    margin: 60px;
+    margin-left: 50px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 7px #a0a0a0,
+                inset 0 -10px 30px rgba(0, 0, 0, 1),
+                inset 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: spin 140s linear infinite;
+}
+.saturn::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 140px;
+    height: 410px;
+    margin-left: 120px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+.venus
+{
+    float: left;
+    width: 170px;
+    height: 170px;
+    background-image: url(../photoes/venus2.jpg);
+    border-radius: 50%;
+    margin: 60px;
+    margin-left: 100px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 15px #cfd4b2,
+                inset 0 -10px 30px rgba(0, 0, 0, 1),
+                inset 0 0 20px rgba(0, 0, 0, 0.7);
+    animation: spin 70s linear infinite;
+}
+.venus::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 130px;
+    height: 410px;
+    margin-left: 50px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+@keyframes spin
+{
+    0%
+    {
+        backround-postion: 0;
+    }
+    100%
+    {
+        background-position: 160%;
+    }
+}
+.big
+{
+    width: 100%;
+    display: none;
+}
+.sun
+{
+    float: right;
+    background-image: url(../photoes/sun.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 60px;
+    margin-left: 0px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 15px #a0571b,
+                inset 0 -30px 30px rgba(0, 0, 0, 1),
+                inset 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: spinsun 170s linear infinite;
+}
+.sun::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 130px;
+    height: 410px;
+    margin-left: 100px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+.jupiter
+{
+    float: right;
+    background-image: url(../photoes/jupiter5.jpg);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 60px;
+    margin-left: 0px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 15px #e4c194,
+                inset 0 -30px 30px rgba(0, 0, 0, 1),
+                inset 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: spinsun 140s linear infinite;
+}
+.jupiter::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 130px;
+    height: 410px;
+    margin-left: 100px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+.mars
+{
+    float: right;
+    background-image: url(../photoes/mars4.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 60px;
+    margin-left: 0px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 15px #a0571b,
+                inset 0 -30px 30px rgba(0, 0, 0, 1),
+                inset 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: spinsun 170s linear infinite;
+}
+.mars::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 130px;
+    height: 410px;
+    margin-left: 80px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+.uranus
+{
+    float: right;
+    width: 170px;
+    height: 170px;
+    background-image: url(../photoes/uranus3.jpg);
+    border-radius: 50%;
+    margin: 60px;
+    margin-left: 100px;
+    box-shadow: inset 0 0 20px #2f383b,
+                      0 0 15px #424b4b,
+                inset 0 -10px 30px rgba(0, 0, 0, 1),
+                inset 0 0 50px rgba(0, 0, 0, 0.7);
+    animation: spin 40s linear infinite;
+}
+.uranus::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 50px;
+    margin-top: 130px;
+    height: 410px;
+    margin-left: 50px;
+    background: radial-gradient(rgb(0, 0, 0),
+                transparent,
+                transparent);
+}
+@keyframes spinsun
+{
+    0%
+    {
+        backround-postion: 0;
+    }
+    100%
+    {
+        background-position: 160%;
+    }
+}
+.info-left
+{
+    position: absolute;
+    margin-top: 530px;
+    max-width: 350px;
+    font-size: 1.2em;
+    color: #fff;
+    padding-left: 10px;
+}
+.big .info-right{
+    position: absolute;
+    right: 0;
+    margin-top: 90px;
+    max-width: 280px;
+    font-size: 1.2em;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.info a 
+{
+    text-decoration: none;
+}
+.lefty
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 3em;
+    transform: rotate(180deg);
+    color: #fff;
+    transition: 0.3s;
+}
+.lefty:hover
+{
+    color: rgb(255, 217, 0);
+}
+.righty
+{
+    position: absolute;
+    right: 40px;
+    top: 105px;
+    font-size: 3em;
+    color: #fff;
+    transition: 0.3s;
+}
+.righty:hover
+{
+    color: rgb(255, 217, 0);
+}
+/* //rick&morty//
+//animation// */
+@keyframes some_name {
+            from {
+               transform: translate(-3000px,-100px);
+               
+            }
+            to {
+              
+                transform:translateX(1100px);
+
+            }
+        }
+#rect {
+    animation: some_name  11s infinite linear;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+/* //////////////
+//Register page//
+///////////// */
+.register
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../photoes/spac2.jpg);
+}
+fieldset
+{
+    border: none;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 19px #fff;
+    border-bottom: 4px;
+}
+.h2-reg
+{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+.register fieldset ul
+{
+    list-style: none;
+    padding: 60px;
+}
+.register fieldset ul li
+{
+    padding: 15px;
+}
+.register fieldset ul li input
+{
+    font-size: 1.5em;
+    color: #fff;
+    background: inherit;
+    backdrop-filter: blur(8px);
+    border-radius: 3px;
+    padding-left: 10px;
+    border-bottom: 2px solid #fff;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    letter-spacing: 2px;
+}
+.reg-btn input
+{
+    border: 2px solid white;
+}
+.reg-btn
+{
+    display: flex;
+    justify-content: center;
+}
+#btn-inp
+{
+    border: 2px solid #fff;
+    padding: 4px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#btn-inp:hover
+{
+    background: rgb(1, 160, 252);
+    border: 2px solid rgb(1, 160, 252);
+}
+fieldset ul li input::placeholder
+{
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
+}
+/* ///////////////
+///////navbar pages/
+////////////////  */
+nav{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: sans-serif;
+    height: 72px;
+    padding: 0 5%;
+    background-color: rgb(13, 11, 17);
+}
+nav .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .links li{
+    list-style: none;
+}
+nav .links a{
+    display: block;
+    padding: 1em;
+    padding-left: 4em;
+    padding-right: 3.5em;
+    border-radius: 3.5px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav .links a:hover
+{
+    background-color: rgba(255, 255, 255, 0.178);
+}
+#nav-toggle
+{
+    position: absolute;
+    top: -100px;
+}
+nav .icon-burger{
+    display: none;
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: #fff;
+}
+/* ///////////
+signin-home//
+//////////// */
+.aaa
+{
+    background-color: rgb(56, 152, 216);
+}
+.signin-container
+{
+    position: relative;
+    justify-content: center;
+}
+.signin
+{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+.signin fieldset
+{
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: none;
+    padding: 100px;
+}
+.signin fieldset h1
+{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -40px;
+    padding-bottom: 10px;
+    color: rgb(45, 224, 21);
+    border-bottom: 5px solid rgb(45, 224, 21);
+    border-radius: 3px;
+}
+.signin fieldset li
+{
+    font-size: 25px;
+    text-align: center;
+    list-style: none;
+    padding-bottom: 7px; 
+    letter-spacing: 0.5px;
+}
+.signin fieldset input
+{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border: 2px solid lightgreen;
+    background-color: rgba(144, 238, 156, 0.459);
+}
+.signin fieldset .signbtn
+{
+    padding: 10px;
+}
+.signin fieldset .signbtn:hover
+{
+    background-color: rgb(144, 238, 156);
+}
+.close-btn
+{
+    position: absolute;
+    text-align: center;
+    float: right;
+    margin-top: -75px;
+    left: 400px;
+    cursor: pointer;
+    font-size: 1.03em;
+    font-size: 1.4em;
+}
+.close-btn:hover
+{
+    color: rgb(64, 181, 235);
+}
+.show-btn
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+}
+.show-btn:hover
+{
+    color: #000;
+}
+/* ///////
+/ty page/
+//////// */
+.body1{
+    margin:  0;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+}
+.header-thanks{
+    background-image: url(../photoes/blackhole.jfif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+.thanks{
+    margin: 0 auto;
+    padding-left: 20px;
+    text-align: center;
+    padding-top: 250px; 
+    width: 65%;
+    color:white
+}
+/* //////////
+/contact us
+////////// */
+.body2 {
+    box-sizing: border-box;
+    font-family:sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(../photoes/space2.jpg);
+  }
+  .container1 {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.836);
+  }
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #4CAF50;
+    text-align: center;
+  }
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .fieldset2 {
+    border: none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 -10px 5px;
+    padding: 10px;
+    font-family: sans-serif;
+    outline: none;
+  }
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+ /* /////////
+//home-btn//
+////////// */
+.homebtn
+{
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 60px;
+    background: rgb(255, 255, 255);
+    color: rgb(146, 146, 146);
+    box-shadow: 0px 3px 5px rgb(194, 194, 194);
+    font-size: 3em;
+    border: 3px solid rgb(146, 146, 146);
+    margin-left: 48%;
+    margin-right: 48%;
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+.homebtn:hover
+{
+    box-shadow: 0px 20px 10px rgb(194, 194, 194);
+    color: rgb(60, 209, 14);
+    border: 3px solid rgb(60, 209, 14);
+    top: 40px;
+}
+/* 
+//////////
+//profile/
+///////// */
+.body6
+{
+    background-image: url(../photoes/pn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 530px;
+}
+.profile
+{
+    left: 550px;
+    top: 100px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: rgb(107, 107, 107);
+    max-width: 700px;
+    max-height: 400px;
+}
+.profilePho
+{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.profile .desc
+{
+    text-align: center;
+}
+.profile .desc h2
+{
+    color: #000;
+    padding-bottom: 10px;
+}
+.profile-info
+{
+    padding: 20px;
+}
+.profile-info table tr td
+{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.profile-info table tr td:nth-child(odd)
+{
+    color: #000;
+    padding-right: 50px;
+}
+.profile-info table tr td:nth-child(even)
+{
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+}
+.prof-icons ul li
+{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 1.7em;
+    border: 3px solid rgb(128, 128, 128);
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+.prof-icons ul li:nth-child(1):hover
+{
+    background: #1DA1F2;
+    color: #fff;
+    border: 3px solid #1DA1F2;
+}
+.prof-icons ul li:nth-child(2):hover
+{
+    color: #fff;
+    background:linear-gradient(45deg,#405de6,#5851db
+                                    ,#833ab4,#c13584
+                                    ,#e1306c,#fd1d1d);
+    border: 3px solid rgb(226, 226, 226);
+}
+.prof-icons ul li:nth-child(3):hover
+{
+    background: #4267B2;
+    color: #fff;
+    border: 3px solid #4267B2;
+}
+.profbtn
+{
+    top: -40px;
+}
+.profbtn:hover
+{
+    top: -70px;
+}
+/* ////////
+//easter//
+///////// */
+.easter
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+}
+.portal
+{
+    margin-left: -100px;
+    margin-top: -380px;
+    height: 460px;
+    width: 180px;
+}
+.portal::after
+{
+    transform: rotate(90deg);
+    position: absolute;
+    content: '';
+    width: 70px;
+    margin-top: -260px;
+    height: 510px;
+    margin-left: 20px;
+    background: radial-gradient(rgb(37, 155, 14),
+                transparent,
+                transparent);
+}
+.rick
+{
+    padding-right: 130px;
+}
+.portal img
+{
+    width: 450px;
+    height: 500px;
+    margin-top: -20px;
+    margin-left: -130px;
+}
+
+.morty
+{
+    margin-top: 150px;
+    padding-left: 200px;
+}
+.morty img
+{
+    height: 300px;
+}
+.easter p 
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 23px;
+}
+.p2rick
+{
+    display: none;
+}
+
+@keyframes portal-spin {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#moveportal {
+animation: portal-spin  7s forwards;
+width: 100px;
+height: 100px;
+text-align: center;
+line-height: 100px;
+}
+.portal p
+{
+    display: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: left;
+    letter-spacing: .5px;
+    line-height: 20px
+}

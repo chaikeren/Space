@@ -1,0 +1,353 @@
+
+
+@media screen and (min-width: 768px)
+{
+    .home{
+        background: linear-gradient(to left,
+                  rgb(44, 14, 14) 50%,
+                  rgb(87, 109, 209) 50%);
+    }
+    .gallery2{
+        background: linear-gradient(to left,
+                  rgb(121, 58, 0) 50%,
+                  rgb(34, 34, 34) 50%);
+    }
+    .gallery3{
+        background: linear-gradient(to left,
+                  rgb(150, 147, 100) 50%,
+                  rgb(175, 173, 138) 50%);
+    }
+    .gallery4{
+        background: linear-gradient(to left,
+                  rgb(138, 189, 202) 50%,
+                  rgb(184, 156, 156) 50%);
+    }
+    .gallery5{
+        background: linear-gradient(to left,
+                  rgb(128, 112, 143) 50%,
+                  rgb(202, 158, 91) 50%);
+    }
+    .info h2
+    {
+        margin-left: 0px;
+    }
+    .big{
+    display: block;
+    }
+    .big h2
+    {
+    left: 400px;
+    margin-top: -100px;
+    margin-left: 80px;
+    }
+    .righty
+    {
+        right: 15px;
+    }
+    .lefty
+    {
+        left: -25px;
+    }
+    .info h2{
+    width: 35%;
+    text-align: center;
+    margin-top: 20px;
+    }
+    .wrapper2 .big .info-right
+    {
+        margin-top: 430px;
+        max-width: 300px;
+        padding-right: 30px;
+    }
+    .mercury
+    {
+        margin-left: 100px;
+    }
+    .tl-content p
+    {
+        font-size: 1.4em;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    .home{
+        background: linear-gradient(to left,
+                  rgb(44, 14, 14) 50%,
+                  rgb(87, 109, 209) 50%);
+    }
+    .gallery2{
+        background: linear-gradient(to left,
+                  rgb(14, 7, 0) 50%,
+                  rgb(34, 34, 34) 50%);
+    }
+    .info .info-left{
+        margin-top: 280px;
+        max-width: 250px;
+    }
+    .lefty
+    {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    }
+    .big h2{
+        font-size: 6em;
+    }
+    .info h2{
+        margin-left: 100px;
+        font-size: 6em;
+    }
+    .earth{
+    margin-left: 300px;
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    }
+    .mercury
+    {
+        margin-top: 200px;
+        margin-left: 350px;
+    }
+    .venus
+    {
+        margin-top: 200px;
+        margin-left: 350px;
+    }
+    .saturn
+    {
+        margin-left: 350px;
+    }
+    .saturn::after
+    {
+        margin-top: 200px;
+    }
+    .mercury::after
+    {
+        margin-top: 120px;
+    }
+    .big{
+    width: 87%;
+    margin-top: 40px;
+    }
+    .big h2
+    {
+    left: 1200px;
+    margin-top: -190px;
+    font-size: 6em;
+    }
+    .wrapper2 .big .info-right{
+        margin-top: 80px;
+        max-width: 250px;
+    }
+    .big .sun{
+        width: 400px;
+        height: 400px;
+    }
+    .big .sun::after
+    {
+    margin-top: 500px;
+    margin-left: -100px;
+    width: 600px;
+    height: 80px;
+    transform: rotateY(0);
+    }
+    .mars
+    {
+        margin-top: 150px;
+    }
+    .jupiter::after
+    {
+        margin-top: 230px;
+    }
+    .info .earth::after
+    {
+    margin-top: 500px;
+    margin-left: -150px;
+    width: 600px;
+    height: 80px;
+    transform: rotateY(0);
+    }
+}
+@media screen and (max-width: 768px){
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 60px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        justify-content: unset;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+    nav .links a {
+        font-size: 20px;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked ~ .links{
+        bottom: 45%;
+    }
+
+    .tl-item:hover {
+        width: 100% !important;
+      }
+      .tl-year
+      {
+          top: 15%;
+      }
+      .tl-year p {
+
+        font-size: 1.1rem;
+      }
+      .tl-content
+      {
+          text-align: left;
+          font-size: 0.8em;
+          top: 20%;
+      }
+
+      .wrapper
+      {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        margin-top: 250px;
+        perspective: 1500px;
+        perspective-origin: 40% 30%;
+        transform: rotate(-8deg);
+      }
+      .wrapper > div
+      {
+        position: relative;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+        height: 0;
+        width: 100%;
+     }
+     .body4{
+        max-height: 200vh;
+    }
+     .container{
+        width: 300px;
+        display: flex;
+        top: 150px;
+        transform: skewY(0deg);
+    }
+    #showcard1
+    {
+        display: none;
+    }
+    #showcard2
+    {
+        display: none;
+    }
+    #showcard3
+    {
+        display: none;
+    }
+    .showCards
+    {
+        color: #fff;
+        display: flex;
+        position: absolute;
+        top: 150px;
+        font-size: 3em;
+        transition: 0.7s ease-in-out;
+    }
+    .showCards:hover
+    {
+        color: rgb(9, 154, 238);
+        top: 0px;
+    }
+    .homebtn
+    {
+        left: -25px;
+    }
+    input#toggle:checked ~ #show-menu .btn:nth-child(2){
+        top: -80px;
+        left: 10px;
+        opacity: 1;
+    }
+    
+    input#toggle:checked ~ #show-menu .btn:nth-child(3){
+        top: -150px;
+        left: 130px;
+        opacity: 1;
+    }
+    
+    input#toggle:checked ~ #show-menu .btn:nth-child(4){
+        left: 115px;
+        top: -65px;
+        opacity: 1;
+    }
+    
+    input#toggle:checked ~ #show-menu .btn:nth-child(5){
+        left: 25px;
+        top: -165px;
+        opacity: 1;
+    }
+    
+    input#toggle:checked ~ #show-menu .btn:nth-child(6){
+        top: -95px;
+        left: -90px;
+        opacity: 1;
+    }
+    footer
+    {
+        max-width: 360px;
+    }
+    .profile
+    {
+        left: 0;
+        right: 0;
+        top: 120px;
+        display: block;
+    }
+    .prof-icons ul
+    {
+        display: flex;
+        margin-left: 40px;
+    }
+    .prof-icons ul li:nth-child(3)
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .profbtn
+    {
+        top: -70px;
+        left: -30px;
+    }
+    .rick
+    {
+        display: none;
+    }
+    .morty
+    {
+        display: none;
+    }
+    .portal
+    {
+        margin-top: 0px;
+    }
+    .portal p
+    {
+        display: block;
+    }
+    .body6
+    {
+        background: #fff;
+    }
+}
